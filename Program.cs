@@ -21,7 +21,7 @@ PrintArray(massiv);
 
 int KolichestvoChetnih(int[] array){
 int kol=0;
-for (int j=0; j<massiv.Length; j++){
+for (int j=0; j<array.Length; j++){
     if (array[j]%2==0) kol++;}
 return kol;
 }
