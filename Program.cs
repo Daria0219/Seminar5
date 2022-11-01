@@ -21,10 +21,9 @@ double min=massiv[0];
 for (int j=1; j<massiv.Length; j++){
     if (massiv[j]>max) max=massiv[j];
     if (massiv[j]<min) min=massiv[j];}
-double Razniza=(max-min);
 
 Console.WriteLine();
-Console.WriteLine("разница между максимальным и минимальным элементом массива = "+Razniza);
+Console.WriteLine("разница между максимальным и минимальным элементом массива = "+(max-min));
 
 
 
