@@ -8,11 +8,11 @@ void FillArr (int[] array)
         for (int i=0; i<length; i++){
         array[i] = int.Parse(Console.ReadLine());}
 } 
-Console.WriteLine("Введите число элементов массива");
+Console.WriteLine("Введите число элементов");
 int len = int.Parse(Console.ReadLine());
 
 int[] massiv = new int [len];
-Console.WriteLine("Введите массив");
+Console.WriteLine("Введите элементы");
 FillArr(massiv);
 
 for (int j=0; j<massiv.Length; j++)
