@@ -1,30 +1,27 @@
 ﻿
-void PrintArray (double[] arr)
+void PrintArray (int[] arr)
 {   for (int pos=0; pos<arr.Length; pos++)
     {Console.Write($"{arr[pos]} ");}
 }
-void FillArr (double[] array)
+void FillArr (int[] array)
 {   int length = array.Length;
         for (int i=0; i<length; i++){
-        array[i] = new Random().Next(0,100);}
+        array[i] = int.Parse(Console.ReadLine());}
 } 
-
 Console.WriteLine("Введите число элементов массива");
 int len = int.Parse(Console.ReadLine());
 
-double[] massiv = new double [len];
+int[] massiv = new int [len];
+Console.WriteLine("Введите массив");
 FillArr(massiv);
-PrintArray(massiv);
 
-double max=massiv[0];
-double min=massiv[0];
-for (int j=1; j<massiv.Length; j++){
-    if (massiv[j]>max) max=massiv[j];
-    if (massiv[j]<min) min=massiv[j];}
-double Razniza=(max-min);
-
+for (int j=0; j<massiv.Length; j++)
+{   if (massiv[j]==20) 
+       {massiv[j]=200;
+        break;}
+}
 Console.WriteLine();
-Console.WriteLine("разница между максимальным и минимальным элементом массива = "+Razniza);
+PrintArray(massiv);
 
 
 
