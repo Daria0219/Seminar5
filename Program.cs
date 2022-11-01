@@ -18,12 +18,15 @@ int len = int.Parse(Console.ReadLine());
 int[] massiv = new int [len];
 FillArr(massiv);
 PrintArray(massiv);
+
+int KolichestvoChetnih(int[] array){
 int kol=0;
 for (int j=0; j<massiv.Length; j++){
-    if (massiv[j]%2==0) kol++;
+    if (array[j]%2==0) kol++;}
+return kol;
 }
 Console.WriteLine();
-Console.WriteLine("количество чётных чисел = "+kol);
+Console.WriteLine("количество чётных чисел = "+KolichestvoChetnih(massiv));
 
 
 
